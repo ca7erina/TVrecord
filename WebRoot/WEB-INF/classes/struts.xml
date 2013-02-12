@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="tv"   extends="json-default"  namespace="/">
+		<action name="list" class="action.ListAction">
+	      <result name="success" type="dispatcher">/WEB-INF/jsp/index.jsp</result>
+		</action>	
+		<action name="listAll" class="action.ListAllAction">
+	      <result name="success" type="dispatcher">/WEB-INF/jsp/listAll.jsp</result>
+		</action>	
+		<action name="goAdd" >
+	      <result name="success" >/WEB-INF/jsp/add.jsp</result>
+		</action>
+	
+		<action name="add" class="action.AddAction" >
+	      <result name="success" type="redirect">list.action</result>
+		</action>	
+	
+		<action name="goModify" class="action.GoModifyAction" >
+	      <result name="success" >/WEB-INF/jsp/modify.jsp</result>
+		</action>
+		<action name="modify" class="action.ModifyAction" >
+	      <result name="success" type="redirect">list.action</result>
+		</action>
+		<action name="delete" class="action.DeleteAction" >
+	      <result name="success" type="redirect">listAll.action</result>
+		</action>
+	</package>
+</struts>
