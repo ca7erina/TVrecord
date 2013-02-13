@@ -1,7 +1,4 @@
-drop database if exists tv;
-create database tv;
-use tv;
-
+use cxx;
 
 drop table  if exists video;
 create table video(id int(4) primary key auto_increment,

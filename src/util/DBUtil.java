@@ -14,9 +14,9 @@ public class DBUtil {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/tv" +
+					"jdbc:mysql://66.175.211.5:3306/cxx" +
 					"?useUnicode=true&characterEncoding=utf8",
-					"root","19870625");
+					"root","123456");
 		} catch (Exception e) {
 
 			e.printStackTrace();

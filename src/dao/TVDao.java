@@ -215,7 +215,7 @@ public class TVDao {
 			
 			
 			pstm.executeUpdate();
-		//	System.out.println("video added :"+v);
+		System.out.println("video added :"+v);
 		} catch (Exception e) {
 			e.printStackTrace();
 		
